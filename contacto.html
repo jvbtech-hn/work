@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contacto — JVB Tech</title>
+<meta name="description" content="Escríbenos por WhatsApp, Facebook o visita nuestro sitio web.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="grain"></div>
+
+<header class="nav" id="nav">
+  <div class="nav__inner">
+    <a href="index.html" class="nav__logo"><span class="nav__logo-j">J</span><span class="nav__logo-v">V</span><span class="nav__logo-b">B</span></a>
+    <nav class="nav__links" id="navLinks">
+      <a href="index.html">Inicio</a>
+      <a href="servicios.html">Servicios</a>
+      <a href="productos.html">Productos</a>
+      <a href="nosotros.html">Nosotros</a>
+      <a href="contacto.html" class="is-active">Contacto</a>
+    </nav>
+    <a class="nav__cta" href="https://wa.me/504XXXXXXXX" target="_blank" rel="noopener">WhatsApp</a>
+    <button class="nav__burger" id="burger" aria-label="Abrir menú" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main>
+
+  <section class="page-header">
+    <p class="page-header__kicker">Contacto</p>
+    <h1>¿Qué necesitas resolver hoy?</h1>
+    <p class="page-header__sub">Escríbenos y te respondemos directo, sin formularios largos ni esperas.</p>
+  </section>
+
+  <section class="contact">
+    <div class="contact__grid">
+      <a class="contact__card" href="https://wa.me/504XXXXXXXX" target="_blank" rel="noopener">
+        <span class="contact__label">WhatsApp</span>
+        <span class="contact__value">504 XXXX-XXXX</span>
+      </a>
+      <a class="contact__card" href="https://facebook.com/jvbtech_hn" target="_blank" rel="noopener">
+        <span class="contact__label">Facebook</span>
+        <span class="contact__value">jvbtech_hn</span>
+      </a>
+      <a class="contact__card" href="https://www.techjvb.com" target="_blank" rel="noopener">
+        <span class="contact__label">Sitio web</span>
+        <span class="contact__value">www.techjvb.com</span>
+      </a>
+    </div>
+  </section>
+
+  <section class="location">
+    <div class="location__panel">
+      <div class="location__info">
+        <h2>Nuestra ubicación</h2>
+        <p>Aquí coordinamos entregas, recolección de equipos y visitas.</p>
+        <a class="btn btn--primary" href="https://www.google.com/maps/dir/?api=1&destination=15.454134,-87.963656" target="_blank" rel="noopener">Cómo llegar</a>
+      </div>
+      <div class="location__map">
+        <iframe src="https://maps.google.com/maps?q=15.454134,-87.963656&z=15&output=embed" title="Ubicación de JVB Tech" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="footer__inner">
+    <span class="footer__logo"><span class="nav__logo-j">J</span><span class="nav__logo-v">V</span><span class="nav__logo-b">B</span></span>
+    <nav class="footer__links">
+      <a href="index.html">Inicio</a>
+      <a href="servicios.html">Servicios</a>
+      <a href="productos.html">Productos</a>
+      <a href="nosotros.html">Nosotros</a>
+      <a href="contacto.html">Contacto</a>
+      <a href="privacidad.html">Política de privacidad</a>
+    </nav>
+    <p>&copy; <span class="year"></span> JVB Tech — Soporte técnico &amp; desarrollo web</p>
+  </div>
+</footer>
+
+<div class="assistant" id="assistant">
+  <button class="assistant__toggle" id="assistantToggle" aria-label="Abrir asistente" aria-expanded="false">
+    <svg viewBox="0 0 24 24" class="assistant__icon-chat" aria-hidden="true"><path d="M4 5 H20 V16 H8 L4 20 Z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg>
+    <svg viewBox="0 0 24 24" class="assistant__icon-close" aria-hidden="true"><path d="M6 6 L18 18 M18 6 L6 18" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+  </button>
+  <div class="assistant__panel" id="assistantPanel" hidden>
+    <div class="assistant__header"><span>Asistente JVB</span><button class="assistant__close" id="assistantClose" aria-label="Cerrar asistente">&#10005;</button></div>
+    <div class="assistant__messages" id="assistantMessages">
+      <div class="assistant__msg assistant__msg--bot">Hola, puedo orientarte sobre precios, horarios y servicios. ¿Qué necesitas saber?</div>
+    </div>
+    <div class="assistant__chips" id="assistantChips">
+      <button data-q="precios">Precios</button>
+      <button data-q="horarios">Horarios</button>
+      <button data-q="servicios">Servicios</button>
+      <button data-q="humano">Hablar con alguien</button>
+    </div>
+    <form class="assistant__form" id="assistantForm">
+      <input type="text" id="assistantInput" placeholder="Escribe tu pregunta..." autocomplete="off">
+      <button type="submit" aria-label="Enviar">↑</button>
+    </form>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
